@@ -1,0 +1,60 @@
+﻿<Page x:Class="SlippersFactory320AAE.Pages.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SlippersFactory320AAE.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+
+    <Grid>
+        <Image Source="/img/fonhome.jpg"
+                   Stretch="Fill"/>
+        <StackPanel>
+            <TextBlock FontSize="40"
+                       HorizontalAlignment="Center"
+                       Margin="50"
+                       FontWeight="Bold"
+                       Foreground="DarkSlateGray">Главная страница</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <StackPanel>
+                <Button x:Name="planTb"
+                        Margin="0 0 0 20"
+                        Width="418"
+                        Height="50"
+                        FontSize="20"
+                        Background="DarkSlateGray"
+                        Foreground="White"
+                        FontWeight="DemiBold"
+                        BorderBrush="DarkSlateGray" 
+                        Click="planTb_Click">Составить план
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                    <Button x:Name="workersTb"
+                            Width="200"
+                            Margin="0 0 20 20"
+                            FontSize="15"
+                            Background= "White"
+                            Foreground="DarkSlateGray"
+                            BorderBrush="White" 
+                            Click="workersTb_Click">Работники</Button>
+                    <Button x:Name="providersTb"
+                            Width="200"
+                            Margin="0 0 0 20"
+                            FontSize="15"
+                            Background= "White"
+                            Foreground="DarkSlateGray"
+                            BorderBrush="White" 
+                            Click="providersTb_Click">Поставщики</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
